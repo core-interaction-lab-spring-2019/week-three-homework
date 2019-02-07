@@ -7,3 +7,4 @@ Starter Files for Week 3 Homework
 - Include 3 animations, with a 1 second gap between each. `animation-delay` and `animation-duration`
 - Use a Pseudo Element to add decoration to an element on your page.
 - Use a Pseudo Class to style an element on your page.
+Lilliana Checo
