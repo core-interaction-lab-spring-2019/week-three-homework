@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.shape {
+  background: #42cef4;
+  margin-top: 250px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.one {
+  position: relative;
+  border-radius: 0px;
+  width: 120px;
+  height: 120px; 
+  margin-left: 200px;
+  animation-name: spin;
+  animation-duration: 1s;
+}
+
+.one::after {
+  position: absolute;
+  border-radius: 0px;
+  width: 100px;
+  height: 100px; 
+  content: "";
+  background-color: #d6ff35;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.two {
+  position: relative;
+  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+  animation-name: zoom;  
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.two::after {
+  position: absolute;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  content: "";
+  background-color: #d6ff35;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.three {
+  position: relative;
+  border-radius: 30px;
+  width: 170px;
+  height: 70px;
+  margin-right: 200px;
+  margin-top: 270px;
+  animation-name: updown;
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+
+.three::after {
+  position: absolute;
+  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+  content: "";
+  background-color: #d6ff35;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  100% { transform: rotateZ(360deg);
+  }
+}
+
+@keyframes zoom {
+  25% { transform: scale(1.5);
+  }
+
+  50% {transform: scale(1);
+  }
+
+  75% { transform: scale(1.5);
+  }
+
+  100% {transform: scale(1);
+  }
+}
+
+@keyframes updown {
+  20% { transform: translateY(-100px);
+  }
+
+  40% { transform: translateY(100px);
+  }
+
+  60% { transform: translateY(-100px);
+  }
+
+  80% { transform: translateY(100px);
+  }
+
+  100% { transform: translateY(0px);
+  }
+}
