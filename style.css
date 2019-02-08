@@ -18,14 +18,20 @@ body {
 .shape {
   background: #42cef4;
   margin-top: 250px;
+  width: 33.3333%;
 }
 
 .content {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.full-width {
+  width: 100%;
+} 
 
 .one {
   position: relative;
