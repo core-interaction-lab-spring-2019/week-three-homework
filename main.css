@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+}
+.pls{
+    font-size: 100px;
+    text-align: center;
+}
+.a{
+    font-size: 400px;  
+    text-align: center;
+    color: #fff200;
+}
+.b{
+    font-size: 50px;  
+    text-align: center;
+    color: grey;
+}
