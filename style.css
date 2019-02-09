@@ -9,9 +9,6 @@ body {
   margin: 25px;
 }
 
-div {
-
-}
 
 .block {
 	display:flex;
@@ -19,7 +16,13 @@ div {
 	align-items:center;
 	width: 50%;
   height: auto;
+	background-position: center;
 }
+
+/*::after .block {
+
+
+}*/
 
 /*link 2 clouds here (dont need img tags in html) cloudw (white) & cloudg (gray) */
 .cloud {
@@ -40,6 +43,14 @@ div {
   background-image: url("images/sun.PNG");
   background-repeat: no-repeat;
   background-size: 50%;
+	position: relative;
+}
+
+::after .sun {
+	background-image: url("images/sun.PNG");
+	background-repeat: no-repeat;
+	background-size: 50%;
+  position: absolute;
 }
 
 h2 {
