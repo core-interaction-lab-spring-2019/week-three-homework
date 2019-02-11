@@ -1,0 +1,105 @@
+body {
+	display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.shapes {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 50%;
+}
+
+#rectangle {
+    width: 40vmin;
+    height: 16vmin;
+    background-color: blue;
+    animation: move 4s infinite linear;
+}
+
+p {
+    display: none;
+    background-color: rgb(160, 197, 253);
+    padding: 20px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 3em;
+    text-align: center;
+    color: blue;
+}
+
+p i:first-child {
+    color: rgb(255, 230, 0);
+}
+  
+div:hover p {
+    display: block;
+    margin-top: 2vmin;
+}
+
+@keyframes move {
+    25% { transform: translate(0, 30vmin); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(0, -30vmin); }
+    100% { transform: initial; }
+}
+
+#square-outer {
+    animation: bounce 1s infinite 1s;
+}
+
+@keyframes bounce {
+	50% { transform: translate(0, 20vmin); }
+	100% { transform: initial; }
+}
+
+#square {
+    width: 25vmin;
+    height: 25vmin;
+    background-color: green;
+    animation: twirl 2s infinite 1s;
+}
+
+@keyframes twirl {
+	50% { transform: rotate(180deg); }
+	100% { transform: initial; }
+}
+
+#square:hover {
+    width: 35vmin;
+    height: 35vmin;
+    /* animation: change-color 6s infinite 1s linear; */
+}
+
+/* @keyframes change-color {
+    0% { background-color: green; }
+    25% { background-color: rgb(82, 185, 82); }
+    50% { background-color: rgb(13, 44, 13); }
+    75% { background-color: rgb(177, 202, 177); }
+    100% { background-color: rgb(53, 104, 53); }
+} */
+
+#circle {
+    width: 23vmin;
+    height: 23vmin;
+    background-color: red;
+    border-radius: 50%;
+    animation: colors 10s infinite 2s;
+}
+
+@keyframes colors {
+    /* 0% {background-color:red; transform: initial; } */
+    10% {background-color: orange; transform: translate(0, -30vmin) scale(0); }
+    20% {background-color:yellow; transform: translate(-30vmin, 0) scale(0.5); }
+    30% {background-color:orange; transform: translate(0, 30vmin) scale(0); }
+    /* 40% {background-color:red; transform: translate(0, 0) scale(2); } */
+    50% {background-color:red; transform: translate(0, 0) scale(2); }
+    /* 60% {background-color:red; transform: translate(0, 0) scale(2); } */
+    /* 70% {background-color:orange; transform: translate(0, 30vmin); }
+    80% {background-color:yellow; transform: translate(-30vmin, 0) scale(0.1); }
+    90% {background-color:orange; transform: translate(0, 30vmin); }
+    100% {background-color:red; transform: translate(0, 0) scale(2); } */
+}
+
+
+
