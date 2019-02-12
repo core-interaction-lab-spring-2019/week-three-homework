@@ -1,0 +1,149 @@
+body {
+	margin: 0;
+    font-size:200px; 
+	text-align: center;
+	color: black;
+}
+
+.fix {position: fixed; top: 0; right: 0;}
+
+.fixb {position: fixed; top: 0; left: 0;}
+
+.fixc {position: fixed; bottom: 0; right: 0;}
+
+.fixd {position: fixed; bottom: 0; left: 0;}
+
+.fix2 {position: fixed; top: 33.3%; right: 0;}
+
+.fix3 {position: fixed; top: 66.6%; right: 0;}
+
+.color {
+	height: 33.3%; 
+	width: 100%; 
+    animation: pulse 4s infinite;
+    animation-delay: 1s;}
+	@keyframes pulse {
+		0% {
+		  background-color: rgba(255, 255, 255, 0);
+		}
+		50% {
+		  background-color:rgba(255, 0, 0, 0.9);
+		}
+		100% {
+			background-color: rgba(255, 255, 255, 0);
+		  }
+	  }
+
+.color2 {
+	height: 33.3%; 
+	width: 100%; 
+    animation: pulse3 4s infinite;
+    animation-delay: 1s;}
+	@keyframes pulse3 {
+		0% {
+		  background-color: rgba(255, 255, 255, 0);
+		}
+		50% {
+		  background-color: rgba(255, 255, 0, 0.9);
+		}
+		100% {
+			background-color: rgba(255, 255, 255, 0);
+		  }
+	  }      
+
+.color3 {
+	height: 33.3%; 
+	width: 100%; 
+    animation: pulse2 4s infinite;
+    animation-delay: 1s;}
+	@keyframes pulse2 {
+		0% {
+		  background-color: rgba(255, 255, 255, 0);
+		}
+		50% {
+		  background-color: rgba(0, 0, 255, 0.9);
+		}
+		100% {
+			background-color: rgba(255, 255, 255, 0);
+		  }
+	  }
+
+.square1 {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	animation-name: stretch;
+    animation-duration: 4s; 
+    animation-delay: 1s;
+	animation-timing-function: ease-out; 
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running;}
+  @keyframes stretch {
+	0% {
+	  transform: scale(.1);
+	  background-color: rgba(255, 0, 0, 0.85);
+	  border-radius: 100%;
+	}
+	50% {
+	  background-color: rgba(0, 0, 255, 0.85);
+	}
+	100% {
+	  transform: scale(4);
+	  background-color: rgba(255, 255, 0, 0.85);
+	}
+  }
+
+.rotate {
+	animation-name: rotate;
+    animation-duration: 4s;
+    animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;}
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+      }
+      
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+selector:pseudo-class {
+    property:value;
+}  
+
+  p {color:white;
+    size: 30px;
+    }
+
+  p:first-child {
+    color: purple;
+    size: 30px;
+    } 
+
+selector::pseudo-element {
+    property:value;
+}  
+
+  p {
+    color: white;
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+
+  p::before {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100%;
+    height: 10px;
+    content: "";
+    background-color: red;
+    z-index: -1;
+  }
