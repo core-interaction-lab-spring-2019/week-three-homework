@@ -30,4 +30,105 @@ body {
     border-radius: 50%;
   }
 
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+      }
+      
+      100% {
+          transform: rotate(360deg);
+      }
+  }
   
+  @keyframes color {
+    0% {
+      color: red;
+    }
+  
+    50% {
+      color: blue;
+      }
+      
+      100% {
+          color: red;
+      }
+  }
+  
+  @keyframes size {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .circle1 {
+      animation-name: rotate;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+  }
+  
+  /* .circle2 {
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+   */
+  .circle3 {
+    animation-name: size;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+
+  .circle2 {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: red;
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }
+  }
+  
+  body,
+  html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  Resources
