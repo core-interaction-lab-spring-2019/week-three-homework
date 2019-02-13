@@ -1,0 +1,98 @@
+h1{
+    font-family: "Helvetica Neue";
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+h1:after {
+    content: ", Core Lab Interaction";
+}
+
+.shapes {
+    margin-left: 80px; 
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    background:blue;
+    border-radius: 50%;
+    margin: auto;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-iteration-count: 1; 
+    animation-timing-function: ease-out; 
+    display: inline-block;
+  }
+
+  #circle:hover {
+    background:orange;
+}
+
+  @keyframes stretch {
+    0% {
+      transform: scale(1);
+      border-radius: 100%;
+    }
+    50% {
+      transform: scale(.70);
+    }
+    100% {
+      transform: scale(.3);
+    }
+  }
+  
+  #square {
+        width: 200px;
+        height: 200px;
+        background: red;
+        margin: auto;
+        display: inline-block;
+        left: 80px;
+        bottom: 130px;
+        animation-name: spin;
+        animation-duration: 2s;
+        animation-iteration-count: 1; 
+        animation-timing-function: ease-out; 
+        animation-delay: 3s;
+  }
+
+  #square:hover {
+      background:green;
+  }
+
+  @keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    /* 50% {
+        transform:rotate(180deg)
+    } */
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid yellow;
+    margin: auto;
+    display: inline-block;
+        left: 350px;
+        bottom: 130px;
+        animation-name: spin;
+        animation-duration: 2s;
+        animation-iteration-count: 1; 
+        animation-timing-function: ease-out; 
+        animation-delay: 6s;
+  }
+
+  #triangle:hover {
+    border-bottom: 200px solid purple;
+  }
