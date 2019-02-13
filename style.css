@@ -15,7 +15,16 @@ body {
     width: 200px;                              
     height: 200px;                            
     background: #15c;                           
-    border-radius: 100px;                     
+    border-radius: 100px; 
+    
+        width: 0px;
+        height: 0px;
+        border-right: 105px solid transparent;
+        border-top: 105px solid yellow;
+        border-left: 105px solid yellow;
+        border-bottom: 105px solid yellow;
+        border-radius: 50%;
+                         
   }    
   .circle2 {
     width: 180px;
@@ -24,10 +33,17 @@ body {
     border-radius: 50%;
   }
   .circle3 {
-    width: 180px;
-    height: 180px;
+   
     background: rgb(77, 252, 223);
     border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    border-left: 105px solid transparent;
+    border-top: 105px solid yellow;
+    border-right: 105px solid yellow;
+    border-bottom: 105px solid yellow;
+    border-radius: 50%;
+                     
   }
 
   @keyframes rotate {
@@ -70,9 +86,10 @@ body {
   
   .circle1 {
       animation-name: rotate;
-      animation-duration: 4s;
+      animation-duration: 0s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+      animation-delay: 0s;
   }
   
   /* .circle2 {
@@ -87,6 +104,7 @@ body {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-delay: 4s;
   }
 
 
@@ -98,7 +116,7 @@ body {
     animation-name: stretch;
     animation-duration: 1.5s; 
     animation-timing-function: ease-out; 
-    animation-delay: 0;
+    animation-delay: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
@@ -131,4 +149,3 @@ body {
     justify-content: center;
   }
   
-  Resources
