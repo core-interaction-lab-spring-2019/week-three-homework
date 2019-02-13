@@ -1,0 +1,33 @@
+body {
+	display: flex;
+	background-color: black;
+	height: 100vh;
+}
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33.333%;
+}
+
+.circle1 {                                
+    width: 200px;                              
+    height: 200px;                            
+    background: #15c;                           
+    border-radius: 100px;                     
+  }    
+  .circle2 {
+    width: 180px;
+    height: 180px;
+    border: 10px solid hotpink;
+    border-radius: 50%;
+  }
+  .circle3 {
+    width: 180px;
+    height: 180px;
+    background: rgb(77, 252, 223);
+    border-radius: 50%;
+  }
+
+  
