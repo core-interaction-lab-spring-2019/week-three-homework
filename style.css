@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: lightyellow;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+	top: 20%;
+ 	left: 44.5%;
+ 	position: absolute;
+ 	font-size: 28px;
+}
+
+h1::first-letter{
+	background-color: lightgreen;
+}
+
+.shape {
+  background: lightgreen;
+  width: 150px;
+  height: 150px;
+
+  top: 45%;
+  left: 45%;
+  position: absolute;
+}
+
+.shape:hover {
+  animation-name: boop;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+@keyframes boop {
+  0% {
+    transform: scale(1.0);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+  50% {
+  	transform: rotate(180deg);
+  }
+  75% {
+  	background: orange;
+  }
+  100% {
+  	transform: scale(1.0);
+  }
+}
