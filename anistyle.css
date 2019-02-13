@@ -1,0 +1,73 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  /* align-items: center; */
+}
+
+.triangle {
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #f00;
+	border-bottom: 25px solid transparent;
+  /* transform: scale(2,2) */
+  top: 400px;
+  left: 0px;
+  position: relative;
+  animation:
+  run 1.5 ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  transform: scale(1,1);
+  border-radius: 100%;
+  background-color: blue;
+  top: 250px;
+  position: relative;
+  z-index: -1;
+  animation:
+  shift ease-in-out;
+  animation-duration: 3.5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+}
+
+.greetingsandsalutations.center{
+  font-family: Times;
+  font-size: 150pt;
+  color: white;
+  position: absolute;
+  /* align-content: center; */
+  top: 275px;
+  left: 645px;
+  animation:
+    colorr 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorr {
+  from {color: white}
+
+  to {color: blue}
+}
+
+@keyframes run {
+  0% {transform: translate(0px, 0px);}
+  50% {transform: translate(800px, 0px);}
+  100% {transform: translate(1450px, 0px);}
+  /* 75% {transform: rotate(180deg);} */
+  /* 100% {transform: translate(0px, 0px);} */
+}
+
+@keyframes shift {
+  0% {transform: scale(1,1);}
+  50% {transform: scale(2,2);}
+  75% {transform: scaleY(100px);}
+  100% {transform: scaleY(100px);}
+}
