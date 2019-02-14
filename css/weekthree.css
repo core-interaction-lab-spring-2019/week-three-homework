@@ -1,0 +1,103 @@
+body {
+	display: flex;
+	background-color: black;
+	height: 100vh;
+}
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33.333%;
+}
+h1{
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 40px;
+}
+h3{
+
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 40px;
+}
+}
+}
+
+h2:first-child{
+	background-color:blue;
+
+}
+
+h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 40px;
+	
+}
+h2 {
+		-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+@keyframes color {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: pink;
+	}
+	
+	100% {
+		color: white;
+	}
+}
+
+@keyframes size {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} */
+
+.rotate {
+	animation-name: rotate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.color {
+  animation-name: color;
+  animation-delay:1s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.size {
+  animation-name: size;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
